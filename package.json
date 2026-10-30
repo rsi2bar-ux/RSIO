@@ -1,0 +1,1 @@
+{"name":"sniper-data-backend","version":"2.0.0","description":"Dhan data provider + signal push bridge for Sniper PWA","main":"server.js","scripts":{"start":"node server.js","keys":"node keys.js"},"dependencies":{"web-push":"^3.6.7"},"engines":{"node":">=18"}}

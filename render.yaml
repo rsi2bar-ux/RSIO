@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sniper-data-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - {key: DHAN_CLIENT_ID, sync: false}
+      - {key: DHAN_PIN, sync: false}
+      - {key: DHAN_TOTP_SECRET, sync: false}
+      - {key: VAPID_PUBLIC_KEY, sync: false}
+      - {key: VAPID_PRIVATE_KEY, sync: false}
+      - {key: VAPID_SUBJECT, value: "mailto:you@example.com"}
+      - {key: CORS_ORIGIN, value: "*"}
